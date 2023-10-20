@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "id.android.dasar"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "id.android.dasar"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -88,7 +88,6 @@ dependencies {
         exclude("glide-parent")
     }
     kapt("com.github.bumptech.glide:compiler:4.13.2")
-    implementation("com.pixplicity.sharp:library:1.1.0")
 
     // Circle Image
     implementation ("de.hdodenhof:circleimageview:3.1.0")
@@ -104,6 +103,7 @@ dependencies {
     implementation("com.jakewharton.timber:timber:5.0.1")
     implementation("com.facebook.stetho:stetho:1.6.0")
     implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")
+
 //    implementation("io.sentry:sentry-android:5.1.2")
     implementation("org.slf4j:slf4j-nop:1.7.30")
 }
