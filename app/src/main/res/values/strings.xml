@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">berita</string>
+    <string name="berita_filkom">Berita Filkom</string>
+    <string name="action_motion">Show Alert</string>
 </resources>

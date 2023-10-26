@@ -7,6 +7,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import id.android.dasar.R
 import id.android.dasar.data.ModelBerita
 import id.android.dasar.databinding.ActivityMainBinding
+import splitties.activities.start
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -36,5 +37,9 @@ class MainActivity : AppCompatActivity() {
 
 
         adapter.submitList(modelBeritaArray)
+
+        binding.btnToDetail.setOnClickListener {
+            start<MotionActivity>()
+        }
     }
 }
