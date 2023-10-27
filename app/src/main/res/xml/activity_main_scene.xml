@@ -170,7 +170,7 @@
             app:dragDirection="dragUp"
             app:dragScale="1"
             app:moveWhenScrollAtTop="true"
-            app:onTouchUp="stop"
+            app:onTouchUp="autoCompleteToStart"
             app:touchAnchorId="@id/rvBerita"
             app:touchAnchorSide="top"/>
 
