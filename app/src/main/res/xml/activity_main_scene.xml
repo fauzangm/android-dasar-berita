@@ -163,5 +163,16 @@
     </ConstraintSet>
     <Transition
         app:constraintSetStart="@+id/start"
-        app:constraintSetEnd="@+id/onSCrol" />
+        app:constraintSetEnd="@+id/onSCrol"
+        app:duration="1000"
+        >
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:dragScale="1"
+            app:moveWhenScrollAtTop="true"
+            app:onTouchUp="stop"
+            app:touchAnchorId="@id/rvBerita"
+            app:touchAnchorSide="top"/>
+
+    </Transition>
 </MotionScene>
