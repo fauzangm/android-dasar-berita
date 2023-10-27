@@ -24,8 +24,9 @@ class MotionActivity : AppCompatActivity() {
 
     private fun initUi() {
 
-        binding.btnCollapse.setOnClickListener {
+        binding.ivBack.setOnClickListener {
             onBackPressed()
         }
+
     }
 }

@@ -8,6 +8,30 @@
     tools:context=".ui.MotionActivity"
     app:layoutDescription="@xml/activity_motion_scene">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContainerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/bg_primary_top_big_rounded"
+        android:padding="@dimen/default_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/default_margin"
+            android:background="@drawable/ic_arrwoback"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     <TextView
         android:id="@+id/mainText"
         android:layout_width="wrap_content"
@@ -91,6 +115,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/colorPrimary"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bghome" />
     <TextView
         android:id="@+id/collapseMainText"
         android:layout_width="wrap_content"
